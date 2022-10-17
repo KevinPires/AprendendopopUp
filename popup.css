@@ -1,0 +1,26 @@
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.w-full{
+    width: 100%;
+}
+
+
+
+.popUp{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.popUp-box{
+    position: fixed;
+    background-color: #c1c1c5;
+    border-radius: 1.4rem;
+    width: 25rem;
+    padding: 1rem 1.6rem;
+   
+}
