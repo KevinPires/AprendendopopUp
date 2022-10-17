@@ -3,12 +3,9 @@
     flex-direction: column;
 }
 
-
 .w-full{
     width: 100%;
 }
-
-
 
 .popUp{
     position: absolute;
@@ -22,5 +19,18 @@
     border-radius: 1.4rem;
     width: 25rem;
     padding: 1rem 1.6rem;
-   
 }
+
+.container{
+    display: flex;
+}
+
+.container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+

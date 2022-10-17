@@ -1,0 +1,63 @@
+function editarAgendamento(){
+    return(
+    <div className="popUp wh-full container-column">
+        <div className='overlay'></div>
+        <div className="wh-full container-column al-center jc-center">
+            <div className="popUp-box">
+                <div className="w-full container jc-end">
+                    <button className="close-popUp" type="button" onClick={toggleEdtPopUp}>x</button>
+                </div>
+                <form  maxLength='30' className="container-column w-full">
+                    <div className="container w-full space-between">
+                        <div className="container-column">
+                            <label>Nome do paciente*</label>
+                            <input maxLength="35" value={nPac} onChange={e => setNPac(e.target.value)}/>
+                        </div>
+                        <div className="container-column">
+                            <label>Data do agendamento*</label>
+                            <input  value={nDt} onChange={e => setNDt(e.target.value)}/>
+                        </div>
+                    </div>
+                    <div className="container w-full space-between">
+                        <div className="container-column">
+                            <label>Nome da mãe</label>
+                            <input  maxLength='35' value={nMae} onChange={e => setNMae(e.target.value)}/>
+                        </div>
+                        <div className="container-column">
+                            <label>Data de nascimento*</label>
+                            <input  value={nNasc} onChange={e => setNNasc(e.target.value)}/>
+                        </div>
+                    </div>
+                    <div className="container w-full space-between">
+                        <div className="container-column">
+                            <label>Nome do pai</label>
+                            <input  maxLength='35' value={nPai} onChange={e => setNPai(e.target.value)}/>
+                        </div>
+                        <div className="container-column">
+                            <label>Sexo*</label>
+                            <input maxLength="11" value={nSexo} onChange={e => setNSexo(e.target.value)}/>
+                        </div>
+                        <div className="container-column">
+                            <label>Horário*</label>
+                            <input type='time' value={nHr} onChange={e => setNHr(e.target.value)}/>
+                        </div>
+                    </div>
+                    <div className="container w-full">
+                        <div className="container-column w-full">
+                            <label>Detalhes do paciente</label>
+                            <textarea value={nDetal} onChange={e => setNDetal(e.target.value)}></textarea>
+                        </div>
+                    </div>
+                    <div className="container w-full">
+                        <div className="container-column w-full">
+                            <label>Conclusão do atendimento</label>
+                            <textarea value={nConc} onChange={e => setNConc(e.target.value)}></textarea>
+                        </div>
+                    </div>
+                </form>
+                <button className="common-button" type="button" onClick={editarConsulta}>Editar agendamento</button>
+            </div>
+        </div>
+    </div>
+    )
+}

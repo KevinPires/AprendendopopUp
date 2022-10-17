@@ -10,28 +10,39 @@
 <body>
     <div class="popUp w-full">
         <div class="popUp-box">
-            <div >
-                <label> Nome </label>
-                <input />
-                <label> Data de Nascimento </label>
-                <input />
-            </div>
-            <div>
-                <label> E-mail</label>
+            <button className="close-popUp" type="button" >x</button>
+           <form maxLength="30" class="container w-full space-between">
+        <div className="container w-full space-between">
+            <div class="container-column">
+                <label>Nome</label>
                 <input/>
             </div>
-            <div>
-                <label> CEP</label>
+            <div class="container-column">
+                <label>Data de Nascimento </label>
                 <input/>
-                <label> CPF</label>
+            
+            </div>
+            <div  class="container-column">
+                <label>E-mail</label>
                 <input/>
             </div>
-            <div>
-                <label> Endereço</label>
+        </div>
+   
+            <div class="container-column">
+                <label>CEP</label>
                 <input/>
             </div>
-            <div>
-                <button>Concluir </button>
+            <div class="container-column">
+                <label>CPF</label>
+                <input/>
+            </div>
+            <div class="container-column">
+                <label>Endereço</label>
+                <input/>
+            </div>
+            <div class="container-column">
+            </form> 
+                <button>Concluir</button>
             </div>
         </div>
     </div>
